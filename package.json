@@ -1,7 +1,7 @@
 {
   "name": "hto",
   "version": "0.0.2",
-  "description": "Hapi Todo MVC Exercises",
+  "description": "Hapi Exercises",
   "main": "index.js",
   "scripts": {
     "start": "nodemon lib/index.js",
