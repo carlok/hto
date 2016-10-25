@@ -11,7 +11,12 @@ process.env.SERVER_ENV !== 'production' ? Env(__dirname + './../.env') : null;
 
 lab.test('It will return {hi: "world"}', (done) => {
 
-    Server.inject(`${process.env.PREFIX}/users/token_free`, (res) => {
+    let options = {
+        method: 'GET',
+        url: `${process.env.PREFIX}/users/token_free`
+    };
+
+    Server.inject(options, (res) => {
 
         Code.expect(res.statusCode).to.equal(200);
         Code.expect(res.result).to.equal({ hi: 'world' });
