@@ -19,7 +19,7 @@ lab.test('It will return {hi: "world"}', (done) => {
     Server.inject(options, (res) => {
 
         Code.expect(res.statusCode).to.equal(200);
-        Code.expect(res.result).to.equal({ hi: 'world' });
+        Code.expect(res.result).to.equal({ hello: 'world' });
         done();
     });
 });
