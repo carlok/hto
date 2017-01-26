@@ -19,6 +19,7 @@
   "dependencies": {
     "blipp": "2.3.0",
     "boom": "4.2.0",
+    "crypto": "0.0.3",
     "glue": "4.0.0",
     "hapi": "15.2.0",
     "hapi-auth-jwt2": "7.1.3",

@@ -1,0 +1,38 @@
+{
+  "name": "hto",
+  "version": "0.0.2",
+  "description": "Hapi Exercises",
+  "main": "index.js",
+  "scripts": {
+    "lint": "lab --lint --lint-fix lib/index.js",
+    "start": "nodemon lib/index.js",
+    "start-dev": "NODE_ENV=develop nodemon lib/index.js",
+    "test": "lab -C -c -v test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlok/hto.git"
+  },
+  "author": "Carlo Perassi <carlo.perassi@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/carlok/hto",
+  "dependencies": {
+    "blipp": "2.3.0",
+    "boom": "4.2.0",
+    "glue": "4.1.0",
+    "hapi": "16.1.0",
+    "hapi-auth-jwt2": "7.2.4",
+    "hapi-swagger": "7.6.0",
+    "inert": "4.1.0",
+    "joi": "10.2.0",
+    "jsonwebtoken": "7.2.1",
+    "lodash": "4.17.4",
+    "node-env-file": "0.1.8",
+    "sha256": "0.2.0",
+    "vision": "4.1.1"
+  },
+  "devDependencies": {
+    "code": "4.0.0",
+    "lab": "12.0.0"
+  }
+}
