@@ -4,7 +4,7 @@
   "description": "Hapi Exercises",
   "main": "index.js",
   "scripts": {
-    "lint": "lab --lint --lint-fix lib/index.js",
+    "lint": "eslint lib/",
     "start": "nodemon lib/index.js",
     "start-dev": "NODE_ENV=develop nodemon lib/index.js",
     "test": "lab -C -c --lint --lint-fix -v test/index.js"
