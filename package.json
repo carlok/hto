@@ -7,7 +7,9 @@
     "lint": "eslint lib/",
     "start": "nodemon lib/index.js",
     "start-dev": "NODE_ENV=develop nodemon lib/index.js",
-    "test": "lab -C -c --lint --lint-fix -v test/index.js"
+    "test": "./node_modules/lab/bin/lab -C -c --lint --lint-fix -v test/index.js",
+    "testj": "jasmine-node --color --verbose test/resolution-spec.js",
+    "cover": "istanbul cover jasmine-node --color --verbose test/"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,9 @@
     "eslint": "^3.14.1",
     "eslint-config-airbnb-base": "^11.0.1",
     "eslint-plugin-import": "^2.2.0",
-    "lab": "10.8.2"
+    "istanbul": "0.4.5",
+    "jasmine-node": "1.14.5",
+    "lab": "10.8.2",
+    "request": "2.79.0"
   }
 }

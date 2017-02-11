@@ -2,5 +2,10 @@ _node_modules/
 _package.json
 .env
 .idea
+coverage/
 node_modules/
+node_modules_complete/
+a.js
+aaa.txt
+package.json.*
 npm-debug.log
